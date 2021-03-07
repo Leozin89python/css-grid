@@ -1,0 +1,32 @@
+header{
+	grid-area:header;
+	border:white solid 2px;
+	color:white;	
+}
+main{
+	grid-area:main;
+	border:white solid 2px;
+	color:white;
+}
+nav{
+	grid-area:nav;
+	border:white solid 2px;
+	color:white;
+}
+footer{
+	grid-area:footer;
+	border:white solid 2px;
+	color:white;
+}
+body{
+	background:black;
+	height:95vh;
+	display:grid;
+	grid-template-columns:1fr 200px;
+	grid-template-rows:100px 1fr 50px;
+	grid-template-areas:
+		'header  	header'
+		'main    	nav'
+		'footer  footer'
+	;
+}

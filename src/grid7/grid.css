@@ -1,0 +1,27 @@
+header{
+	grid-area:cabeca;
+	border:solid 2px green;
+}
+main{
+	grid-area:principal;
+	border:solid 2px green;
+}
+nav{
+	grid-area:nave;
+	border:solid 2px green;
+}
+footer{
+	grid-area:pe;
+	border:solid 2px green;
+}
+body{
+	height:95vh;
+	display:grid;
+	grid-template-columns:1fr 200px;
+	grid-template-rows:0.5fr  1fr;
+	grid-template-areas:
+		'cabeca    nave'
+		'principal nave'
+		'pe        nave'
+	;
+}

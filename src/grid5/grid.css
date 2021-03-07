@@ -1,0 +1,27 @@
+main{
+	grid-area:principal;
+	border:solid 2px darkred;
+}
+header{
+	grid-area:cabecalho;
+	border:solid 2px darkred;
+}
+nav{
+	grid-area:navegation;
+	border:solid 2px darkred;
+}
+footer{
+	grid-area:rodape;
+	border:solid 2px darkred;
+}
+body{
+	height:95vh;
+	display:grid;
+	grid-template-columns:200px 1fr;
+	grid-template-rows:100px 1fr 50px;
+	grid-template-areas:
+		'navegation  cabecalho'
+		'navegation  principal'
+		'rodape         rodape'
+	;
+}
